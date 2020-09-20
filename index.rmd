@@ -1,0 +1,43 @@
+---
+title: |
+  ![](/Users/viviandu/Desktop/CoronaNet Website/logo_blank.png)
+output: html_document
+css: style.css
+---
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE,warning=FALSE)
+```
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <br>
+  
+  ![](/Users/viviandu/Desktop/CoronaNet Website/map.png)
+  
+  <h1> 
+    32,000 entries, 195 countries, 500+ researchers.
+  </h1>
+  <br>
+  
+  <p>
+  The CoronaNet Research Project compiles a database on government responses to the coronavirus. Our main focus is to collect as much information as we can about the various fine-grained actions governments are taking to defeat the coronavirus. This includes not only gathering information about which governments are responding to the coronavirus, but who they are targeting the policies toward (e.g. other countries), how they are doing it (e.g. travel restrictions, banning exports of masks) and when they are doing it.
+  </p>
+  
+  <form>
+  <button formaction= "https://www.coronanet-project.org/download" class="button button1">DOWNLOAD DATA</button>
+  </form>
+  
+  <h2> Last updated: 9/19/20 </h2>
+  
+  <h2> Citation: Cheng, Cindy, Joan Barceló, Allison Hartnett, Robert Kubinec, and Luca Messerschmidt. 2020. COVID-19 Government Response Event Dataset (CoronaNet v1.0). Nature Human Behaviour (2020). <a href="https://doi.org/10.1038/s41562-020-0909-7">https://doi.org/10.1038/s41562-020-0909-7</a></h2>
+
+  <div class="flexContainer"> 
+    fhserbgjfbgahjgsegher 
+  </div>
+
+</body>
+<footer>
+  <p>Licenses and Partner Institutions</p>
+</footer>
