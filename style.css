@@ -1,0 +1,249 @@
+* {
+    margin: 0;
+    box-sizing: border-box; 
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.navbar{
+  visibility: hidden
+}
+
+
+body{
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+    font-family: 'DIN Alternate';
+    font-weight: 300;
+    text-align: center;
+}
+
+.slideshow {
+  position: relative;
+  width: 100%;
+  background-color: #7d4e67;
+}
+
+.slide {
+  display:inline-block;
+  position:relative;
+  width: 24%;
+}
+
+.image {
+  display:inline-block;
+  width: 100%;
+  height: auto;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.flexBox{
+  flex: none;
+  display: block;
+  width: 400px;
+  height: 250px;
+  background-color: #7d4e67;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+
+}
+
+.imgbox {
+    position: relative;
+    display:block ;
+    object-fit: scale-down;
+    text-align: center;
+}
+
+.container {
+  position: relative;
+  margin: 10px;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 64px;
+}
+
+h1 {
+    font-size: 40px;  
+    text-align: center;
+}
+
+h2 {
+    font-size: 16px;  
+    text-align: center;
+}
+
+p { 
+    font-size: 18px; 
+    margin: 0;
+    padding: 0;
+}
+
+footer {
+  font-family: 'DIN Alternate';
+  text-align: center;
+  padding: 15px;
+  background-color: white;
+  color: black;
+  padding: 2%;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a.white { 
+    color: white;
+}
+
+a.white:hover {
+    color: white;
+    text-decoration: none;
+}
+
+a.white:visited {
+    color: white;
+    text-decoration: none;
+}
+
+a.title:visited { 
+    color: black;
+}
+
+a.title:hover {
+    color: black;
+    text-decoration: none;
+}
+
+a:visited { 
+    color: dimgrey;
+}
+
+a:hover {
+    color: #7d4e67;
+    text-decoration: underline;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: black;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #7d4e67;
+}
+
+li a:visited {
+  color: white;
+}
+
+li a, .dropbtn {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li.dropdown {
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #ba93a8;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {background-color: #a37c91;}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.button {
+  border: none;
+  color: black;
+  padding: 15px 32px;
+  font-family: 'DIN Alternate';
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.button1 {
+  border-radius: 15px;
+  background-color: black;
+  color: white;
+}
+
+.button1:hover {
+  background-color: #7d4e67;
+  color: white;
+}
+
+.button2 {
+  background-color: black;
+  color: white; 
+}
+
+.button2:hover {
+  background-color: #7d4e67;
+  color: white;
+}
+
+.logo {
+    height: 5em; 
+    width: 15em;
+    margin: 2px 30px;
+    flex:0;
+    display: inline-block;
+}
