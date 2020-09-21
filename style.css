@@ -97,6 +97,11 @@ p {
     padding: 0;
 }
 
+p.black {
+    font-size: 16px;
+    color: black;
+}
+
 footer {
   font-family: 'DIN Alternate';
   text-align: center;
@@ -140,6 +145,11 @@ a:visited {
 
 a:hover {
     color: #7d4e67;
+    text-decoration: none;
+}
+
+a.link:hover {
+    color: #7d4e67;
     text-decoration: underline;
 }
 
@@ -164,6 +174,7 @@ li a {
 }
 
 li a:hover {
+  color: white;
   background-color: #7d4e67;
 }
 
@@ -180,6 +191,7 @@ li a, .dropbtn {
 }
 
 li.dropdown {
+  color: black;
   display: inline-block;
 }
 
@@ -192,7 +204,7 @@ li.dropdown {
   z-index: 1;
 }
 
-.dropdown-content a {
+.dropdown-content a{
   color: black;
   padding: 12px 16px;
   text-decoration: none;
@@ -241,8 +253,8 @@ li.dropdown {
 }
 
 .logo {
-    height: 5em; 
-    width: 15em;
+    height: 75px; 
+    width: 200px;
     margin: 2px 30px;
     flex:0;
     display: inline-block;
