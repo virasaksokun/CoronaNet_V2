@@ -9,7 +9,6 @@
   visibility: hidden
 }
 
-
 body{
     width: 100vw;
     height: 100vh;
@@ -70,7 +69,7 @@ body{
 
 .container {
   position: relative;
-  margin: 10px;
+  margin: 30px;
 }
 
 .centered {
@@ -91,6 +90,11 @@ h2 {
     text-align: center;
 }
 
+h3 {
+    font-size: 24px;  
+    text-align: left;
+}
+
 p { 
     font-size: 18px; 
     margin: 0;
@@ -106,6 +110,7 @@ p.block {
     font-size: 16px;
     color: black;
     text-align: left;
+    font-family: "Futura";
 }
 
 a {
@@ -156,7 +161,10 @@ ul {
   padding: 0;
   overflow: hidden;
   background-color: black;
+  display: block;
+  width: 100%;
 }
+
 
 ul.block {
   list-style-type: square;
@@ -170,7 +178,7 @@ ul.block {
 
 
 li {
-  float: left;
+  display: inline-block;
 }
 
 li a {
