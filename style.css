@@ -107,10 +107,10 @@ p.black {
 }
 
 p.block {
-    font-size: 16px;
+    font-size: 18px;
     color: black;
     text-align: left;
-    font-family: "Futura";
+    font-family: "Helvetica";
 }
 
 a {
@@ -150,6 +150,11 @@ a:hover {
     text-decoration: none;
 }
 
+a.link {
+    color: #7d4e67;
+    text-decoration: none;
+}
+
 a.link:hover {
     color: #7d4e67;
     text-decoration: underline;
@@ -166,19 +171,17 @@ ul {
 }
 
 
-ul.block {
-  list-style-type: square;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  list-style-position: inside;
-  background-color: #a37c91;
+ul.dot {
+  font-family: "Helvetica";
+  list-style-position: inside;.
+  list-style-type: circle;
+  background-color: white; 
   text-align: left;
 }
 
-
 li {
   display: inline-block;
+  text-align: left;
 }
 
 li a {
