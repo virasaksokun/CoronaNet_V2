@@ -110,7 +110,7 @@ p.block {
     font-size: 18px;
     color: black;
     text-align: left;
-    font-family: "Futura";
+    font-family: "Helvetica";
 }
 
 a {
@@ -172,7 +172,7 @@ ul {
 
 
 ul.dot {
-  font-family: "Futura";
+  font-family: "Helvetica";
   list-style-position: inside;.
   list-style-type: circle;
   background-color: white; 
