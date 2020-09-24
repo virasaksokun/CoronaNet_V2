@@ -21,19 +21,24 @@ body{
 .slideshow {
   position: relative;
   width: 100%;
-  background-color: #7d4e67;
+  margin: 0;
 }
 
 .slide {
   display:inline-block;
+  background-size: cover;
   position:relative;
   width: 24%;
+  margin: 0;
 }
 
 .image {
   display:inline-block;
-  width: 100%;
-  height: auto;
+  margin: 0;
+  max-height: 100%;
+  max-width: 100%;
+  object-fit: cover;
+  
 }
 
 .text {
