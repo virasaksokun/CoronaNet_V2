@@ -162,6 +162,45 @@ a.link:hover {
     text-decoration: underline;
 }
 
+.accordion {
+  font-family: "Helvetica";
+  background-color: #ba93a8;
+  color: black;
+  cursor: pointer;
+  padding: 30px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 18px;
+  transition: 0.5s;
+}
+
+.active, .accordion:hover {
+  background-color: #a37c91;
+}
+
+.accordion:after {
+  content: '\002B';
+  color: black;
+  font-weight: bold;
+  float: right;
+  margin-left: 30px;
+}
+
+.active:after {
+  content: "\2212";
+}
+
+.panel {
+  padding: 0 30px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
+
 ul {
   list-style-type: none;
   margin: 0;
@@ -172,17 +211,25 @@ ul {
   width: 100%;
 }
 
-
-ul.dot {
+ol {
   font-family: "Helvetica";
-  list-style-position: inside;.
-  list-style-type: circle;
-  background-color: white; 
+  list-style-type: decimal;
   text-align: left;
+  list-style-position: inside;
+  font-size: 18px;
+}
+
+ol.circle {
+  list-style-type: circle;
 }
 
 li {
   display: inline-block;
+  text-align: left;
+}
+
+li.numbered{
+  display: list-item;
   text-align: left;
 }
 
