@@ -32,6 +32,21 @@ body{
   margin: 0;
 }
 
+.overlay {
+  position: relative;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #008CBA;
+}
+
+.slide:hover .overlay {
+  opacity: 1;
+}
+
 .image {
   display:inline-block;
   margin: 0;
@@ -354,7 +369,6 @@ body, html {
   background-color: #7d4e67;
 }
 
-/* Style the tab content (and add height:100% for full page content) */
 .tabcontent {
   color: black;
   background-color: #a37c91;
