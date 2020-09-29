@@ -19,21 +19,62 @@ body{
 }
 
 .slideshow {
-  position: relative;
-  width: 100%;
-  background-color: #7d4e67;
+    position: relative;
+    width: 90vw;
+    height: 30vw;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: space-around;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    
 }
 
 .slide {
-  display:inline-block;
-  position:relative;
-  width: 24%;
+    display: flex;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    width: 24%;
+    height: 48%;
+    
+    justify-content: center;
+    align-items: center;
+    flex: none;
+    
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: black;
+    text-align: center;
+    height: 100%;
+    width: 100%;
+    
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.slide:hover .overlay {
+  opacity: 1;
 }
 
 .image {
   display:inline-block;
-  width: 100%;
-  height: auto;
+  margin: 0;
+  max-height: 100%;
+  max-width: 100%;
+  object-fit: cover;
+  
 }
 
 .text {
@@ -49,15 +90,12 @@ body{
 }
 
 .flexBox{
-  flex: none;
-  display: block;
-  width: 400px;
-  height: 250px;
-  background-color: #7d4e67;
-  background-position: center;
-  background-size: contain;
-  background-repeat: no-repeat;
-
+  flex: 0 0;
+  flex-direction: row;
+  display: flex;
+  max-width: 100%;
+  max-height: 100%;
+  background-repeat: no-repeat; 
 }
 
 .imgbox {
@@ -93,6 +131,11 @@ h2 {
 h3 {
     font-size: 24px;  
     text-align: left;
+}
+
+h4 {
+    font-size: 24px;  
+    text-align: center;
 }
 
 p { 
@@ -160,6 +203,44 @@ a.link:hover {
     text-decoration: underline;
 }
 
+.accordion {
+  font-family: "Helvetica";
+  background-color: #ba93a8;
+  color: black;
+  cursor: pointer;
+  padding: 30px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 18px;
+  transition: 0.5s;
+}
+
+.active, .accordion:hover {
+  background-color: #a37c91;
+}
+
+.accordion:after {
+  content: '\002B';
+  color: black;
+  font-weight: bold;
+  float: right;
+  margin-left: 30px;
+}
+
+.active:after {
+  content: "\2212";
+}
+
+.panel {
+  padding: 0 30px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
 ul {
   list-style-type: none;
   margin: 0;
@@ -170,17 +251,49 @@ ul {
   width: 100%;
 }
 
+ul.gallery {
+  background-color: white;
+  list-style: none;
+  display: relative
+}
+    .list-inline {
+        padding-left: 0;
+        margin-left: -5px;
+        list-style: none;
+    }
+    .list-inline > li {
+        display: inline-block;
+        padding-right: 5px;
+        padding-left: 5px;
+    }
+    .text-center {
+        text-align: center;
+    }
 
-ul.dot {
+ figcaption{
+    font-size: 12px;
+    text-align: center;
+}
+
+ol {
   font-family: "Helvetica";
-  list-style-position: inside;.
-  list-style-type: circle;
-  background-color: white; 
+  list-style-type: decimal;
   text-align: left;
+  list-style-position: inside;
+  font-size: 18px;
+}
+
+ol.circle {
+  list-style-type: circle;
 }
 
 li {
   display: inline-block;
+  text-align: left;
+}
+
+li.numbered{
+  display: list-item;
   text-align: left;
 }
 
@@ -305,7 +418,6 @@ body, html {
   background-color: #7d4e67;
 }
 
-/* Style the tab content (and add height:100% for full page content) */
 .tabcontent {
   color: black;
   background-color: #a37c91;
@@ -324,5 +436,3 @@ footer {
   position: static;
   bottom: 0; 
 }
-
-
