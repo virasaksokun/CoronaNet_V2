@@ -110,6 +110,12 @@ body{
   margin: 30px;
 }
 
+.containerMenu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .centered {
   position: absolute;
   top: 50%;
@@ -385,13 +391,55 @@ li.dropdown {
   color: white;
 }
 
+/* Header logos */
+#particles-js {
+  background-color: #f4f4f4;
+  background-image: url("./images/logo_transparent.png");
+  background-size: 40%;
+  background-repeat: no-repeat;
+  background-position: 50% 20%;
+  height: 50%;
+  position: relative;
+}
+
+#downloadButton {
+  margin: auto;
+  position: absolute;
+  bottom: 5%;
+  left: 30%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  -webkit-appearance: button;
+  -moz-appearance: button;
+  appearance: button;	
+}
+
+#exploreButton {
+  margin: auto;
+  position: absolute;
+  bottom: 5%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  -webkit-appearance: button;
+  -moz-appearance: button;
+  appearance: button;
+}
+
 /* Footer logos */
 .logo {
     height: 50px; 
-    width: 125px;
+    #width: 125px;
     margin: 2px 30px;
     flex:0;
     display: inline-block;
+}
+
+.fa-twitter:hover {
+	color: #00acee;
+}
+
+.fa-github:hover {
+	color: #211f1f;
 }
 
 body, html {
