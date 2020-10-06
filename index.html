@@ -5,42 +5,69 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="icon" type="image/png" href="images/favicon.png">
         <title>CoronaNet</title>
+        <script src="https://kit.fontawesome.com/36fb8500a9.js" crossorigin="anonymous"></script>
+		<div id="particles-js">
+			<div class="containerMenu">
+				<div>
+					<a href='https://www.coronanet-project.org/' id='downloadButton' class='button'><i class="fas fa-file-download"></i> Download data</a>
+					<a href='https://kubinec.shinyapps.io/coronanet/' id='exploreButton' class='button'><i class="fas fa-table"></i> Explore data</a>
+				</div>
+			</div>
+		</div>
+		<script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+		<script src="app.js"></script>
+        <style type="text/css">
+          @font-face {
+            font-family: "Computer Modern";
+            src: url('http://mirrors.ctan.org/fonts/cm-unicode/fonts/otf/cmunss.otf');
+          }
+          @font-face {
+            font-family: "Computer Modern";
+            src: url('http://mirrors.ctan.org/fonts/cm-unicode/fonts/otf/cmunsx.otf');
+            font-weight: bold;
+          }
+          @font-face {
+            font-family: "Computer Modern";
+            src: url('http://mirrors.ctan.org/fonts/cm-unicode/fonts/otf/cmunsi.otf');
+            font-style: italic, oblique;
+          }
+          @font-face {
+            font-family: "Computer Modern";
+            src: url('http://mirrors.ctan.org/fonts/cm-unicode/fonts/otf/cmunbxo.otf');
+            font-weight: bold;
+            font-style: italic, oblique;
+          }
+
+          body {
+            font-family: "Computer Modern", sans-serif;
+          }
+        </style>
     </head>
 
     <body>
-        
-        <div class="imgbox"> <img src="images/logo_blank.png" width= "100%">
-            <div class="centered">
-                <a class= "title" href="index.html">CORONA NET</a>
-            </div>
-        </div>
-        <br>
-            
-        <br>
-        <br>
-        <img src="images/map.png" >
         <div class="container">
-        <br>
+        
         <h1> 
           45,000 entries, 195 countries, 500+ researchers.
         </h1>
-        <br>
+        <br><br><br>
 
         <p>
           The CoronaNet Research Project compiles a database on government responses to the coronavirus. Our main focus is to collect as much information as we can about the various fine-grained actions governments are taking to address the effects of the COVID-19 pandemic. To date, this dataset provides the most comprehensive and granular documentation of such government policies in the world, capturing data for 18 broad policy categories alongside many other dimensions, including the initiator, target and timing of a policy. 
         </p>
-        <br>
+        <br><br>
 
         <form>
         <button formaction= "https://www.coronanet-project.org/download" class="button button1">DOWNLOAD DATA</button>
         </form>
-        <br>
+        
+        <br><br><br>
 
         <h2> Last updated: 9/19/20 </h2>
 
         <h2> Citation: Cheng, Cindy, Joan Barceló, Allison Hartnett, Robert Kubinec, and Luca Messerschmidt. 2020. COVID-19 Government Response Event Dataset (CoronaNet v1.0). Nature Human Behaviour (2020). <a class="link" href="https://doi.org/10.1038/s41562-020-0909-7">https://doi.org/10.1038/s41562-020-0909-7</a></h2>
         
-        <br>    
+        <br></div>    
             
         <div class="slideshow">
             <div class="slide" style="background-image: url(images/methodology.jpg)">

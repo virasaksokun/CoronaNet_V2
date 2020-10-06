@@ -5,15 +5,46 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <link rel="icon" type="image/png" href="images/favicon.png">
       <title>Codebook</title>
+      <script src="https://kit.fontawesome.com/36fb8500a9.js" crossorigin="anonymous"></script>
+		<div id="particles-js">
+			<div class="containerMenu">
+				<div>
+					<a href='https://www.coronanet-project.org/' id='downloadButton' class='button'><i class="fas fa-file-download"></i> Download data</a>
+					<a href='https://kubinec.shinyapps.io/coronanet/' id='exploreButton' class='button'><i class="fas fa-table"></i> Explore data</a>
+				</div>
+			</div>
+		</div>
+		<script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+		<script src="app.js"></script>
+        <style type="text/css">
+          @font-face {
+            font-family: "Computer Modern";
+            src: url('http://mirrors.ctan.org/fonts/cm-unicode/fonts/otf/cmunss.otf');
+          }
+          @font-face {
+            font-family: "Computer Modern";
+            src: url('http://mirrors.ctan.org/fonts/cm-unicode/fonts/otf/cmunsx.otf');
+            font-weight: bold;
+          }
+          @font-face {
+            font-family: "Computer Modern";
+            src: url('http://mirrors.ctan.org/fonts/cm-unicode/fonts/otf/cmunsi.otf');
+            font-style: italic, oblique;
+          }
+          @font-face {
+            font-family: "Computer Modern";
+            src: url('http://mirrors.ctan.org/fonts/cm-unicode/fonts/otf/cmunbxo.otf');
+            font-weight: bold;
+            font-style: italic, oblique;
+          }
+
+          body {
+            font-family: "Computer Modern", sans-serif;
+          }
+        </style>
     </head>
     
     <body>
-        <div class="imgbox"> <img src="images/logo_blank.png" width= "100%">
-            <div class="centered">
-                <a class= "title" href="index.html">CORONA NET</a>
-            </div>
-        </div>
-        <br>
         <ul>
           <li><a href="index.html">Home</a></li>
           <li class= "dropdown"><a>Methodology</a>
@@ -41,9 +72,9 @@
             <p class="block">
                 The CoronaNet dataset collects data on government policies made in response to the COVID-19 pandemic for 190+ countries around the world. Data collection began on March 28, 2020 and tracks relevant government policies made since December 31, 2019. In the below, we provide a brief overview of the data available from the CoronaNet database. You can download the complete codebook <a class="link" href="https://www.coronanet-project.org/data/codebook/CoronaNet_Codebook.pdf" >here.</a> <br><br>
                 
-                Each policy entry documents the following information:<br>
+                Each policy entry documents the following information:<br><br>
             </p>
-        </div>
+        
         
         <button class="accordion">Policy textual description</button>
         <div class="panel"><br>
@@ -137,7 +168,8 @@
           <p class="block">[date_updated]: Documents the date at which a researcher last checked to see if a policy existed for a particular level of government and policy type. This data is useful to distinguish between whether a) a government did not institute a particular policy (e.g. school closures) or b) such a policy does empirically exist but our researchers have yet to document it in the CoronaNet database  
           <br></p>
         </div>
-
+        </div>
+        
         <script>
         var acc = document.getElementsByClassName("accordion");
         var i;

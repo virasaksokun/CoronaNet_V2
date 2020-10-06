@@ -5,15 +5,46 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <link rel="icon" type="image/png" href="images/favicon.png">
       <title>Visualisations</title>
+      <script src="https://kit.fontawesome.com/36fb8500a9.js" crossorigin="anonymous"></script>
+		<div id="particles-js">
+			<div class="containerMenu">
+				<div>
+					<a href='https://www.coronanet-project.org/' id='downloadButton' class='button'><i class="fas fa-file-download"></i> Download data</a>
+					<a href='https://kubinec.shinyapps.io/coronanet/' id='exploreButton' class='button'><i class="fas fa-table"></i> Explore data</a>
+				</div>
+			</div>
+		</div>
+		<script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+		<script src="app.js"></script>
+        <style type="text/css">
+          @font-face {
+            font-family: "Computer Modern";
+            src: url('http://mirrors.ctan.org/fonts/cm-unicode/fonts/otf/cmunss.otf');
+          }
+          @font-face {
+            font-family: "Computer Modern";
+            src: url('http://mirrors.ctan.org/fonts/cm-unicode/fonts/otf/cmunsx.otf');
+            font-weight: bold;
+          }
+          @font-face {
+            font-family: "Computer Modern";
+            src: url('http://mirrors.ctan.org/fonts/cm-unicode/fonts/otf/cmunsi.otf');
+            font-style: italic, oblique;
+          }
+          @font-face {
+            font-family: "Computer Modern";
+            src: url('http://mirrors.ctan.org/fonts/cm-unicode/fonts/otf/cmunbxo.otf');
+            font-weight: bold;
+            font-style: italic, oblique;
+          }
+
+          body {
+            font-family: "Computer Modern", sans-serif;
+          }
+        </style>
     </head>
     
     <body>
-        <div class="imgbox"> <img src="images/logo_blank.png" width= "100%">
-            <div class="centered">
-                <a class= "title" href="index.html">CORONA NET</a>
-            </div>
-        </div>
-        <br>
         <ul>
           <li><a href="index.html">Home</a></li>
           <li class= "dropdown"><a>Methodology</a>
