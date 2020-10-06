@@ -14,8 +14,8 @@ body{
     height: 100vh;
     overflow-x: hidden;
     font-weight: 300;
-    margin-left: 100px;
-    margin-right: 100px;
+    margin-left: 150px;
+    margin-right: 150px;
     text-align: center;
 }
 
@@ -218,7 +218,7 @@ a.link:hover {
   background-color: darkgrey;
   color: black;
   cursor: pointer;
-  padding: 30px;
+  padding: 15px;
   width: 100%;
   border: none;
   text-align: left;
