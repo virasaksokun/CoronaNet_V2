@@ -45,7 +45,7 @@
     </head>
     
     <body>
-        <ul>
+        <div id="navbar">
           <li><a href="index.html">Home</a></li>
           <li class= "dropdown"><a>Methodology</a>
             <div class="dropdown-content">
@@ -64,7 +64,22 @@
           <li><a href="about.html">About CoronaNet</a></li>
           <li><a href="team.html">Our People</a></li>
           <li><a href="join.html">Join CoronaNet</a></li>
-        </ul>
+        </div>
+        
+        <script>
+        window.onscroll = function() {myFunction()};
+
+        var navbar = document.getElementById("navbar");
+        var sticky = navbar.offsetTop;
+
+        function myFunction() {
+          if (window.pageYOffset >= sticky) {
+            navbar.classList.add("sticky")
+          } else {
+            navbar.classList.remove("sticky");
+          }
+        }
+        </script>
         
         <div class="container">
             <h1>Codebook</h1><br>
@@ -142,33 +157,29 @@
           If the policy is an update, whether it documents the end of a policy or a change of a policy (e.g. a time extension of a policy) is documented in the [update_type] policy. <br>
           If a policy documents a change of a policy, whether a policy is strengthening (e.g. the policy ends later than previously announced) or weakening (e.g. the policy ends earlier than previously announced) is noted in the [update_level] variable. 
           <br></p><br>
-        </div><br>
-            
-        <div class="container"><p class="block">To date, the CoronaNet Research project documents X policy types with XX sub types as follows:<br>
-        <br></p></div>
+        </div><br><br>
           
-        <div style="background-color: #ba93a8; padding:30px; width: 100%;">
+        
         <h3 >Meta Data</h3><br>
-        <p class="block" style="font-size:18px;">Each unique policy also includes meta data which documents the:</p>    
-        </div>
+        <p class="block" style="font-size:18px;">Each unique policy also includes meta data which documents the:</p><br><br>    
+        
         <button class="accordion">Date of entry collection</button>
         <div class="panel"><br>
-          <p class="block">[recorded_date]: Documents the date and time in which a policy was recorded in the CoronaNet database
-          <br></p><br>
+          [recorded_date]: Documents the date and time in which a policy was recorded in the CoronaNet database
+          <br><br>
         </div>
         
         <button class="accordion">URL link of the primary source</button>
         <div class="panel"><br>
-          <p class="block">[link]: Records the URL link of the primary source from which a policy was documented
-          <br></p><br>
+          [link]: Records the URL link of the primary source from which a policy was documented
+          <br><br>
         </div>
             
         <button class="accordion">Date of policy last checked for updates</button>
         <div class="panel"><br>
-          <p class="block">[date_updated]: Documents the date at which a researcher last checked to see if a policy existed for a particular level of government and policy type. This data is useful to distinguish between whether a) a government did not institute a particular policy (e.g. school closures) or b) such a policy does empirically exist but our researchers have yet to document it in the CoronaNet database  
-          <br></p>
-        </div>
-        </div>
+          [date_updated]: Documents the date at which a researcher last checked to see if a policy existed for a particular level of government and policy type. This data is useful to distinguish between whether a) a government did not institute a particular policy (e.g. school closures) or b) such a policy does empirically exist but our researchers have yet to document it in the CoronaNet database  
+          <br>
+        </div><br>
         
         <script>
         var acc = document.getElementsByClassName("accordion");
@@ -187,7 +198,6 @@
         }
         </script>
             
-        <div class="container">
             <h3>Terms and Conditions</h3><br>
             <p class="block">
                 By using this site or downloading data from CoronaNet, users agree to the following:

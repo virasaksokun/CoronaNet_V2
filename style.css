@@ -5,8 +5,22 @@
     -moz-osx-font-smoothing: grayscale;
 }
 
-.navbar{
-  visibility: visible
+#navbar{
+  background-color: black;
+  color: black;
+  display: block;
+  visibility: visible;
+  z-index:1; 
+}
+
+.navbar li{
+  background-color:black;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
 
 body{
@@ -169,7 +183,9 @@ p.block {
 
 a {
     text-decoration: none;
+    background-color: inherit;
     color: black;
+    font-weight: normal;
 }
 
 a.white { 
@@ -215,20 +231,20 @@ a.link:hover {
 }
 
 .accordion {
-  background-color: darkgrey;
+  background-color: lightgrey;
   color: black;
   cursor: pointer;
   padding: 15px;
-  width: 100%;
+  width: 80%;
   border: none;
   text-align: left;
   outline: none;
-  font-size: 18px;
-  transition: 0.5s;
+  font-size: 14px;
+  transition: 0.3s;
 }
 
 .active, .accordion:hover {
-  background-color: lightgrey;
+  background-color: darkgrey;
 }
 
 .accordion:after {
@@ -236,7 +252,7 @@ a.link:hover {
   color: black;
   font-weight: bold;
   float: right;
-  margin-left: 30px;
+  margin-left: 50px;
 }
 
 .active:after {
@@ -244,10 +260,14 @@ a.link:hover {
 }
 
 .panel {
-  padding: 0 30px;
   background-color: white;
   max-height: 0;
   overflow: hidden;
+  font-size: 14px;
+  font-weight: normal;
+  margin-left: 100px;
+  margin-right: 100px;
+  text-align: left;
   transition: max-height 0.2s ease-out;
 }
 
@@ -300,9 +320,11 @@ li {
   display: inline-block;
   text-align: left;
   font-weight: normal;
+  background-color: black;
 }
 
 li.numbered{
+  background-color: white;
   display: list-item;
   text-align: left;
 }
@@ -360,13 +382,14 @@ li.dropdown {
   display: block;
 }
 
+/*Middle download button*/
 .button {
   border: none;
-  color: black;
   padding: 15px 32px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
+  font-family: inherit;
   font-size: 16px;
   margin: 4px 2px;
   cursor: pointer;
