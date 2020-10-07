@@ -16,6 +16,7 @@
 		</div>
 		<script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
 		<script src="app.js"></script>
+        <script src='jquery-3.2.1.min.js'></script>
         <style type="text/css">
           @font-face {
             font-family: "Computer Modern";
@@ -93,70 +94,69 @@
         
         <button class="accordion">Policy textual description</button>
         <div class="panel"><br>
-          <p class="block">
           [description]: Provides raw text which describes at a minimum, what government initiated a policy, what the policy type is and when the policy type was applied for. Where applicable, it also includes information about the geographical and demographic targets of a policy.<br>
-          </p><br>
+          <br>
         </div>
         
         <button class="accordion">Policy type</button>
         <div class="panel"><br>
-          <p class="block">[type]: Categorizes policies into x broad types and y sub-types. Please see chart below for more information.<br></p><br>
+          [type]: Categorizes policies into x broad types and y sub-types. Please see chart below for more information.<br><br>
         </div>
             
         <button class="accordion">Policy announcement date</button>
         <div class="panel"><br>
-          <p class="block">[date_announced]: Documents the date in which a policy was announced<br></p><br>
+          [date_announced]: Documents the date in which a policy was announced<br><br>
         </div>
         
         <button class="accordion">Policy start date</button>
         <div class="panel"><br>
-          <p class="block">[date_start]: Documents the date in which a policy starts<br></p><br>
+          [date_start]: Documents the date in which a policy starts<br><br>
         </div>
             
         <button class="accordion">Policy end date</button>
         <div class="panel"><br>
-          <p class="block">[date_end]: Document the date in which a policy ends if applicable. If no end date was announced, then this field is left blank.<br></p><br>
+          [date_end]: Document the date in which a policy ends if applicable. If no end date was announced, then this field is left blank.<br><br>
         </div>
             
         <button class="accordion">Country</button>
         <div class="panel"><br>
-          <p class="block">[country]: Documents the country from which a policy originates from<br></p><br>
+          [country]: Documents the country from which a policy originates from<br><br>
         </div>
             
         <button class="accordion">Government level initiating the policy</button>
         <div class="panel"><br>
-          <p class="block">[init_country_level]: Documents what level of government a policy was initiated from. If the policy was initiated a province or municipality, the name of the sub-national government is noted in the [province] and [city] variables respectively<br></p><br>
+          [init_country_level]: Documents what level of government a policy was initiated from. If the policy was initiated a province or municipality, the name of the sub-national government is noted in the [province] and [city] variables respectively<br><br>
         </div>
             
         <button class="accordion">Geographical target of the policy</button>
         <div class="panel"><br>
-          <p class="block">[target_geog_level]: Documents what geographical jurisdiction a policy was targeted toward. <br>
+          [target_geog_level]: Documents what geographical jurisdiction a policy was targeted toward. <br>
           The country of the geographical jurisdiction is noted in the [target_country] variable. <br>
           If applicable, the target province, city or other sub-national target are documented in [target_province], [target_city] and [target_other]. 
-          <br></p><br>
+          <br><br>
         </div>
             
         <button class="accordion">Demographic target of the policy</button>
         <div class="panel"><br>
-          <p class="block">[target_who_what]: Documents whether a policy targets a particular demographic based on their citizenship, residency, or relevance to the health sector<br></p><br>
+          [target_who_what]: Documents whether a policy targets a particular demographic based on their citizenship, residency, or relevance to the health sector<br><br>
         </div>
             
         <button class="accordion">Compliance level</button>
         <div class="panel"><br>
-          <p class="block">[compliance]: Documents whether the de jure compliance for a policy is voluntary or mandatory and if mandatory, what the compliance mechanism is<br></p><br>
+          [compliance]: Documents whether the de jure compliance for a policy is voluntary or mandatory and if mandatory, what the compliance mechanism is<br><br>
         </div>
         
         <button class="accordion">Enforcer of the policy</button>
         <div class="panel"><br>
-          <p class="block">[enforcer]: Documents what government body is tasked with enforcing a particular policy, e.g. police, national level government, etc. <br></p><br>
+          [enforcer]: Documents what government body is tasked with enforcing a particular policy, e.g. police, national level government, etc. <br><br>
         </div>
             
         <button class="accordion">There is a unique [record_id] for each policy sub-type, start date, government level initiating a policy combination. Policies are tracked over time with a unique [policy_id]. Click here for more information on how we document policies over time.</button>
         <div class="panel"><br>
-          <p class="block">Documentation as to whether a policy a new entry or an update is documented in the [entry_type] variable. <br>
+          Documentation as to whether a policy a new entry or an update is documented in the [entry_type] variable. <br>
           If the policy is an update, whether it documents the end of a policy or a change of a policy (e.g. a time extension of a policy) is documented in the [update_type] policy. <br>
           If a policy documents a change of a policy, whether a policy is strengthening (e.g. the policy ends later than previously announced) or weakening (e.g. the policy ends earlier than previously announced) is noted in the [update_level] variable. 
-          <br></p><br>
+          <br><br>
         </div><br><br>
           
         
@@ -180,11 +180,11 @@
           [date_updated]: Documents the date at which a researcher last checked to see if a policy existed for a particular level of government and policy type. This data is useful to distinguish between whether a) a government did not institute a particular policy (e.g. school closures) or b) such a policy does empirically exist but our researchers have yet to document it in the CoronaNet database  
           <br>
         </div><br>
-        
+            
         <script>
         var acc = document.getElementsByClassName("accordion");
         var i;
-
+            
         for (i = 0; i < acc.length; i++) {
           acc[i].addEventListener("click", function() {
             this.classList.toggle("active");
@@ -224,27 +224,6 @@
 
             Cheng, Cindy, Joan Barceló, Allison Hartnett, Robert Kubinec, and Luca Messerschmidt. 2020. COVID-19 Government Response Event Dataset (CoronaNet v1.0). Nature Human Behaviour (2020). <a class="link" href="https://doi.org/10.1038/s41562-020-0909-7">https://doi.org/10.1038/s41562-020-0909-7</a>
             </p><br><br>
-            
-            
-            <!--<p class="block">
-                The CoronaNet dataset yields information of _[x elements]_, with _[x]_ policy categories. In addition to unique IDs and entry types (new entry, update entry, or correction entry), most policy entries collect the following information:
-            </p><br>
-            
-            <ol class="circle">
-                <li class="numbered">Date of entry or collection</li>
-                <li class="numbered">Policy description</li>
-                <li class="numbered">Policy category</li>
-                <li class="numbered">Date of policy announcement</li>
-                <li class="numbered">Policy start date</li>
-                <li class="numbered">Policy end date</li>
-                <li class="numbered">Country initiating the policy</li>
-                <li class="numbered">Government level initiating the policy</li>
-                <li class="numbered">Geographical target of the policy</li>
-                <li class="numbered">Travel target of the policy</li>
-                <li class="numbered">Demographic target of the policy</li>
-                <li class="numbered">Compliance level and measures</li> 
-                <li class="numbered">Enforcer of the policy</li>           
-            </ol><br>-->
         </div>
         
         
