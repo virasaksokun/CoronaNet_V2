@@ -462,8 +462,7 @@ li.dropdown {
 
 /* Footer logos */
 .logo {
-    height: 50px; 
-    width: 130px;
+    height: 50px;
     margin: 2px 30px;
     flex:0;
     display: inline-block;
@@ -535,4 +534,15 @@ footer {
   padding: 2%;
   position: static;
   bottom: 0; 
+}
+
+/* Reduce line space in team cells */
+
+.ag-row .ag-cell {
+  display: flex;
+  align-items: left;
+}
+
+.ag-theme-alpine .ag-cell {
+    line-height: 20px !important;
 }
