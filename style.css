@@ -526,3 +526,12 @@ footer {
   position: static;
   bottom: 0; 
 }
+
+.ag-row .ag-cell {
+  display: flex;
+  align-items: left;
+}
+
+.ag-theme-alpine .ag-cell {
+    line-height: 20px !important;
+}
