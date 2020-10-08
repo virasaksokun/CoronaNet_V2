@@ -253,6 +253,7 @@ a.link:hover {
   color: black;
   font-weight: bold;
   float: right;
+  
   margin-left: 50px;
 }
 
@@ -265,6 +266,7 @@ a.link:hover {
   max-height: 0;
   overflow: hidden;
   font-size: 14px;
+  padding: 1px;
   font-weight: normal;
   text-align: left;
   transition: max-height 0.2s ease-out;
