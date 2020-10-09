@@ -1,134 +1,132 @@
 <!DOCTYPE html>
 <html>
     <link rel="stylesheet" type="text/css" href="style.css">
-    <head>
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="icon" type="image/png" href="images/favicon.png">
-        <title>CoronaNet</title>
-        <script src="https://kit.fontawesome.com/36fb8500a9.js" crossorigin="anonymous"></script>
-        <script src="particles.js"></script>
-        <script src="app.js"></script>
-		<div id="particles-js">
-			<div class="containerMenu">
-				<div>
-					<a href='download.html' id='downloadButton' class='button'><i class="fas fa-file-download"></i> Download data</a>
-					<a href='https://kubinecgit.shinyapps.io/coronanet/' id='exploreButton' class='button'><i class="fas fa-table"></i> Explore data</a>
-				</div>
-			</div>
-		</div>
-		<script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
-		<script src="app.js"></script>
-        <style type="text/css">
-          @font-face {
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <title>CoronaNet</title>
+    <script src="https://kit.fontawesome.com/36fb8500a9.js" crossorigin="anonymous"></script>
+    <script src="particles.js"></script>
+    <script src="app.js"></script>
+    <div id="particles-js">
+        <div class="containerMenu">
+            <a href='download.html' id='downloadButton' class='button'><i class="fas fa-file-download"></i> Download data</a>
+            <a href='https://kubinecgit.shinyapps.io/coronanet/' id='exploreButton' class='button'><i class="fas fa-table"></i> Explore data</a>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script src="app.js"></script>
+    <style type="text/css">
+        @font-face {
             font-family: "Computer Modern";
             src: url('http://mirrors.ctan.org/fonts/cm-unicode/fonts/otf/cmunss.otf');
-          }
-          @font-face {
+        }
+
+        @font-face {
             font-family: "Computer Modern";
             src: url('http://mirrors.ctan.org/fonts/cm-unicode/fonts/otf/cmunsx.otf');
             font-weight: bold;
-          }
-          @font-face {
+        }
+
+        @font-face {
             font-family: "Computer Modern";
             src: url('http://mirrors.ctan.org/fonts/cm-unicode/fonts/otf/cmunsi.otf');
             font-style: italic, oblique;
-          }
-          @font-face {
+        }
+
+        @font-face {
             font-family: "Computer Modern";
             src: url('http://mirrors.ctan.org/fonts/cm-unicode/fonts/otf/cmunbxo.otf');
             font-weight: bold;
             font-style: italic, oblique;
-          }
+        }
 
-          body {
+        body {
             font-family: "Computer Modern", sans-serif;
-          }
-        </style>
-    </head>
+        }
+    </style>
+</head>
 
-    <body>
-        <div class="container">
-        
-        <h1> 
-          35,000 entries, 195 countries, 500+ researchers.
+<body>
+    <div class="container">
+
+        <h1>
+            35,000 entries, 195 countries, 500+ researchers.
         </h1>
         <br><br>
 
         <p>
-          The CoronaNet Research Project compiles a database on government responses to the coronavirus. Our main focus is to collect as much information as we can about the various fine-grained actions governments are taking to address the effects of the COVID-19 pandemic. To date, this dataset provides the most comprehensive and granular documentation of such government policies in the world, capturing data for 18 broad policy categories alongside many other dimensions, including the initiator, target and timing of a policy. 
+            The CoronaNet Research Project compiles a database on government responses to the coronavirus. Our main focus is to collect as much information as we can about the various fine-grained actions governments are taking to address the effects of the COVID-19 pandemic. To date, this dataset provides the most comprehensive and granular documentation of such government policies in the world, capturing data for 18 broad policy categories alongside many other dimensions, including the initiator, target and timing of a policy.
         </p>
         <br><br>
 
         <form>
-        <button formaction= "download.html" class="button button1">DOWNLOAD DATA</button>
+            <button formaction="download.html" class="button button1">DOWNLOAD DATA</button>
         </form>
-        
+
         <br><br>
 
         <h2 style="font-size:14px;"> Last updated: 10/8/20 <br>Citation: Cheng, Cindy, Joan Barceló, Allison Hartnett, Robert Kubinec, and Luca Messerschmidt. 2020. COVID-19 Government Response Event Dataset (CoronaNet v1.0). Nature Human Behaviour (2020). <a class="link" href="https://doi.org/10.1038/s41562-020-0909-7">https://doi.org/10.1038/s41562-020-0909-7</a></h2>
-        
-        <br></div>    
-            
-        <div class="slideshow">
-            <div class="slide" style="background-image: url(images/11.png)">
-                <a class="white">Methodology</a>
-           
-                <div class="overlay">
+
+        <br>
+    </div>
+
+    <div class="slideshow">
+        <div class="slide" style="background-image: url(images/11.png)">
+            <a class="white">Methodology</a>
+
+            <div class="overlay">
                 <a href="methods.html" class="white">Data Collection Methods</a>
                 <a href="codebook.html" class="white">Codebook</a>
                 <a href="validationcheck.html" class="white">Validation and Reliability Checks</a>
-                </div>
             </div>
-            <div class="slide" style="background-image: url(images/16.png)">
-               <a class="white" href="visualisations.html">Visualisations</a>
-            </div>
-            <div class="slide" style="background-image: url(images/14.png)">
-                <a class="white" href="reports.html">Reports</a>
-            </div> 
-            <div class="slide" style="background-image: url(images/13.png)">
-                <a class="white" href="publications.html">Publications</a>
-            </div> 
-            
-            <div class="slide" style="background-image: url(images/10.png)">
-                <a class="white" href="inthemedia.html">In the Media</a>
-            </div>
-            <div class="slide" style="background-image: url(images/9.png)">
-                <a class="white" href="about.html">About CoronaNet</a>
-            </div> 
-            <div class="slide" style="background-image: url(images/12.png)">
-                <a class="white" href="team.html">Our People</a>
-            </div> 
-            <div class="slide" style="background-image: url(images/15.png)">
-                <a class="white" href="join.html">Join CoronaNet</a>
-            </div> 
         </div>
-    
-    </body>
-    
+        <div class="slide" style="background-image: url(images/16.png)">
+            <a class="white" href="visualisations.html">Visualisations</a>
+        </div>
+        <div class="slide" style="background-image: url(images/14.png)">
+            <a class="white" href="reports.html">Reports</a>
+        </div>
+        <div class="slide" style="background-image: url(images/13.png)">
+            <a class="white" href="publications.html">Publications</a>
+        </div>
+
+        <div class="slide" style="background-image: url(images/10.png)">
+            <a class="white" href="inthemedia.html">In the Media</a>
+        </div>
+        <div class="slide" style="background-image: url(images/9.png)">
+            <a class="white" href="about.html">About CoronaNet</a>
+        </div>
+        <div class="slide" style="background-image: url(images/12.png)">
+            <a class="white" href="team.html">Our People</a>
+        </div>
+        <div class="slide" style="background-image: url(images/15.png)">
+            <a class="white" href="join.html">Join CoronaNet</a>
+        </div>
+    </div>
+
+</body>
+
 <footer>
-        <h1>Partner Universites and Institutions</h1>
-        <br>
-        <img class= "logo" src="images/TUM.png">
+    <h1>Partner Universites and Institutions</h1>
+    <br>
+    <img class="logo" src="images/TUM.png">
 
-        <img class= "logo" src="images/NYU.png">
+    <img class="logo" src="images/NYU.png">
 
-        <img class= "logo" src="images/SOM.png">
-        <br>
-        <br>
-        <a href="https://www.jataware.com/"><img class= "logo" src="images/jataware_logo.png"></a>
+    <img class="logo" src="images/SOM.png">
+    <br>
+    <br>
+    <a href="https://www.jataware.com/"><img class="logo" src="images/jataware_logo.png"></a>
 
-        <a href="https://www.leibniz-krisen.de/en.html"><img class= "logo" src="images/LFV_logo.png"></a>
+    <a href="https://www.leibniz-krisen.de/en.html"><img class="logo" src="images/LFV_logo.png"></a>
 
-        <a href="https://www.overton.io/"><img class= "logo" src="images/overton_logo.png"></a>
-        <br>
-        <!--<br>
-        
-        <img class= "logo" src="images/TUM_HFP.png">
-        <br>-->
-        <br>
-        ©2020
-        <br>
-        <br>
-        <a href="https://twitter.com/CoronaNet_org"><img src="images/twitter.png" width = "25px"></a>
-    </footer>
-</html>
+    <a href="https://www.overton.io/"><img class="logo" src="images/overton_logo.png"></a>
+    <br>
+    <br>
+    ©2020
+    <br>
+    <br>
+    <a href="https://twitter.com/CoronaNet_org"><img src="images/twitter.png" width="25px"></a>
+</footer></html>

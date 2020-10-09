@@ -1,191 +1,204 @@
 <!DOCTYPE html>
 <html>
     <link rel="stylesheet" type="text/css" href="style.css">
-    <head>
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <link rel="icon" type="image/png" href="images/favicon.png">
-      <title>Join CoronaNet</title>
-      <script src="https://kit.fontawesome.com/36fb8500a9.js" crossorigin="anonymous"></script>
-		<div id="particles-js">
-			<div class="containerMenu">
-				<div>
-					<a href='download.html' id='downloadButton' class='button'><i class="fas fa-file-download"></i> Download data</a>
-					<a href='https://kubinec.shinyapps.io/coronanet/' id='exploreButton' class='button'><i class="fas fa-table"></i> Explore data</a>
-				</div>
-			</div>
-		</div>
-		<script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
-		<script src="app.js"></script>
-        <style type="text/css">
-          @font-face {
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <title>Join CoronaNet</title>
+    <script src="https://kit.fontawesome.com/36fb8500a9.js" crossorigin="anonymous"></script>
+    <div id="particles-js">
+        <div class="containerMenu">
+            <div>
+                <a href='download.html' id='downloadButton' class='button'><i class="fas fa-file-download"></i> Download data</a>
+                <a href='https://kubinec.shinyapps.io/coronanet/' id='exploreButton' class='button'><i class="fas fa-table"></i> Explore data</a>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script src="app.js"></script>
+    <style type="text/css">
+        @font-face {
             font-family: "Computer Modern";
             src: url('http://mirrors.ctan.org/fonts/cm-unicode/fonts/otf/cmunss.otf');
-          }
-          @font-face {
+        }
+
+        @font-face {
             font-family: "Computer Modern";
             src: url('http://mirrors.ctan.org/fonts/cm-unicode/fonts/otf/cmunsx.otf');
             font-weight: bold;
-          }
-          @font-face {
+        }
+
+        @font-face {
             font-family: "Computer Modern";
             src: url('http://mirrors.ctan.org/fonts/cm-unicode/fonts/otf/cmunsi.otf');
             font-style: italic, oblique;
-          }
-          @font-face {
+        }
+
+        @font-face {
             font-family: "Computer Modern";
             src: url('http://mirrors.ctan.org/fonts/cm-unicode/fonts/otf/cmunbxo.otf');
             font-weight: bold;
             font-style: italic, oblique;
-          }
+        }
 
-          body {
+        body {
             font-family: "Computer Modern", sans-serif;
-          }
-        </style>
-    </head>
-    
-    <body>
-        <div id="navbar">
-          <li><a href="index.html">Home</a></li>
-          <li class= "dropdown"><a>Methodology</a>
+        }
+    </style>
+</head>
+
+<body>
+    <div id="navbar">
+        <li><a href="index.html">Home</a></li>
+        <li class="dropdown"><a>Methodology</a>
             <div class="dropdown-content">
-              <a href="methods.html"><p class= "black">Data Collection Methods</p></a>
-                <a href="codebook.html"><p class= "black">Codebook</p></a>
-                <a href="validationcheck.html"><p class= "black">Validations and Reliability Checks</p></a>
+                <a href="methods.html">
+                    <p class="black">Data Collection Methods</p>
+                </a>
+                <a href="codebook.html">
+                    <p class="black">Codebook</p>
+                </a>
+                <a href="validationcheck.html">
+                    <p class="black">Validations and Reliability Checks</p>
+                </a>
             </div>
-          </li>
-          <li><a href="visualisations.html">Visualisations</a>
-          </li>
-          <li><a href="reports.html">Reports</a>
-          </li>
-          <li><a href="publications.html">Publications</a>
-          </li>
-          <li><a href="inthemedia.html">In the Media</a></li>
-          <li><a href="about.html">About CoronaNet</a></li>
-          <li><a href="team.html">Our People</a></li>
-          <li><a href="join.html">Join CoronaNet</a></li>
-        </div>
-        
-        <script>
-        window.onscroll = function() {myFunction()};
+        </li>
+        <li><a href="visualisations.html">Visualisations</a>
+        </li>
+        <li><a href="reports.html">Reports</a>
+        </li>
+        <li><a href="publications.html">Publications</a>
+        </li>
+        <li><a href="inthemedia.html">In the Media</a></li>
+        <li><a href="about.html">About CoronaNet</a></li>
+        <li><a href="team.html">Our People</a></li>
+        <li><a href="join.html">Join CoronaNet</a></li>
+    </div>
+
+    <script>
+        window.onscroll = function() {
+            myFunction()
+        };
 
         var navbar = document.getElementById("navbar");
         var sticky = navbar.offsetTop;
 
         function myFunction() {
-          if (window.pageYOffset >= sticky) {
-            navbar.classList.add("sticky")
-          } else {
-            navbar.classList.remove("sticky");
-          }
+            if (window.pageYOffset >= sticky) {
+                navbar.classList.add("sticky")
+            } else {
+                navbar.classList.remove("sticky");
+            }
         }
-        </script>
-        
-        <div class="container">
-            <h1> Join CoronaNet</h1>
-            <br>
-            
-            <p class="block">
+    </script>
+
+    <div class="container">
+        <h1> Join CoronaNet</h1>
+        <br>
+
+        <p class="block">
             The CoronaNet project is an international effort of more than 500 researchers to collect data on a variety of government responses to the COVID-19 pandemic for use by policy makers, academic researchers and others. The principal investigators for this project are: <br><br></p>
-                
-            <ol class="circle">
+
+        <ol class="circle">
             <li class="numbered">Cindy Cheng, Hochschule für Politik at the Technical University of Munich</li>
 
             <li class="numbered">Luca Messerschmidt, Hochschule für Politik at the Technical University of Munich</li><br>
-            </ol>
-                
-            <p class="block">
-                Co-Principal investigators for this project are: <br><br></p>
-            
-            <ol class="circle">
-            <li class="numbered">Joan Barceló, New York University Abu Dhabi</li>
-                
-            <li class="numbered">Vanja Grujic, Universidade de Brasília</li>
-                
-            <li class="numbered">Allison Spencer Hartnett, University of Southern California</li>
-                
-            <li class="numbered">Timothy A. Model, Havighurst Fellow at the Miami University</li>
-                
-            <li class="numbered">Robert Kubinec, New York University Abu Dhabi</li>
-                
-            <li class="numbered">Caress Schenk, Nazarbayev University</li>
-            </ol>
+        </ol>
 
-            <p class="block">
+        <p class="block">
+            Co-Principal investigators for this project are: <br><br></p>
+
+        <ol class="circle">
+            <li class="numbered">Joan Barceló, New York University Abu Dhabi</li>
+
+            <li class="numbered">Vanja Grujic, Universidade de Brasília</li>
+
+            <li class="numbered">Allison Spencer Hartnett, University of Southern California</li>
+
+            <li class="numbered">Timothy A. Model, Havighurst Fellow at the Miami University</li>
+
+            <li class="numbered">Robert Kubinec, New York University Abu Dhabi</li>
+
+            <li class="numbered">Caress Schenk, Nazarbayev University</li>
+        </ol>
+
+        <p class="block">
             <br><br>
-            This project has already collected initial data on government responses for all countries in the world. Because of the nature of the global pandemic, we are immediately sharing all data collected in this project with the aim of informing the broader public and stimulating research on the effects and causes of COVID-19 policies. It is an excellent opportunity for those who want hands-on policy analysis. Research assistants also have the option of writing policy reports for their countries or interesting policy trends, which are then published on our website. Your name and bio will also appear in our published articles and on our website.<br><br></p>
-                
-            
-            
-            <p class="block"> 
-            For those who are junior faculty/postdocs/PhD students, we are happy to consider collaboration in terms of academic publishing/writing. Please email us at  about the position can be directed to <a class="link" href="admin@coronanet-project.org"> admin@coronanet-project.org.</a> so we can learn more of your interest in the project/data.<br><br>
+            This project has already collected initial data on government responses for all countries in the world. Because of the nature of the global pandemic, we are immediately sharing all data collected in this project with the aim of informing the broader public and stimulating research on the effects and causes of COVID-19 policies. It is an excellent opportunity for those who want hands-on policy analysis. Research assistants also have the option of writing policy reports for their countries or interesting policy trends, which are then published on our website. Your name and bio will also appear in our published articles and on our website.<br><br>
+        </p>
+
+
+
+        <p class="block">
+            For those who are junior faculty/postdocs/PhD students, we are happy to consider collaboration in terms of academic publishing/writing. Please email us at about the position can be directed to <a class="link" href="admin@coronanet-project.org"> admin@coronanet-project.org.</a> so we can learn more of your interest in the project/data.<br><br>
 
             In addition, we do have some needs for those who can volunteer to help with data engineering and visualization to make the dataset more easily available to others. If you would like to contribute in those areas, please fill out the form below and provide evidence of your experience in your CV.<br><br>
 
 
-            
-            </p>
-            <h3>Vacancies</h3><br>
-            
-                <p class="block">
-                <i>Country Managers</i><br>
-                We are currently looking for country managers for Spain and Italy.<br> Requirements:
-                </p><br>
-            
-                <ol class="circle">
-                <li class="numbered">Leadership skills</li>
-                <li class="numbered">Can devote at least 8 hours per week to the work</li>
-                <li class="numbered">Language proficiency is preferable (Spanish for the position of country manager for Spain and Italian for the position of country manager for Italy)</li></ol><br>
-            
-                <p class="block">
-                <i>Data Analyst</i><br>
-                The project is currently in need of people who are interested specifically in data validation, cleaning, and visualisation.
-                </p><br>
-            
-                <p class="block">
-                <i>Research Assistant (any country or region)</i><br>
-                We are hoping to expand our data collection to more categories and government levels (i.e. subnational), in addition to our ongoing efforts to continuously keep our data up to date. 
-                </p><br>
-                <ol class="circle">
-                <li class="numbered">Expand data collection to further categories and at sub-national levels</li>
-                <li class="numbered">Keep our data up to date as countries relax and impose new restrictions</li>
-                <li class="numbered">Attend general and subregional weekly meetings</li>
-                <br><br>
-                </ol>
-            
-            
-            
-            <h3>Make your application!</h3><br>
-            <p class="block">
-                This position is an unpaid, volunteer position. However, the position can be done remotely, and the hours are flexible. We ask the applicant to consider a commitment of five to ten hour per week commitment for three months, though we will consider situations in which applicants cannot do the full three months (please explain in the application). We will attempt to assign you to a country you are interested in or have language/expertise in, but we cannot guarantee it.<br><br>
-                
-                <i>Applications will be processed on a rolling basis.</i><br><br>
-                
-                To apply, please use our <a class="link" href="https://form.jotform.com/201172569499062">online form.</a> Any questions about the position can be directed to <a class="link" href="admin@coronanet-project.org"> admin@coronanet-project.org.</a>
-            </p>
-            
-            
-        </div>
-    </body>
-    
-    <footer>
-        <h1>Partner Universites and Institutions</h1>
-        <br>
-        <img class= "logo" src="images/TUM.png">
 
-        <img class= "logo" src="images/NYU.png">
+        </p>
+        <h3>Vacancies</h3><br>
 
-        <img class= "logo" src="images/SOM.png">
-        <br>
-        <br>
-        <a href="https://www.jataware.com/"><img class= "logo" src="images/jataware_logo.png"></a>
+        <p class="block">
+            <i>Country Managers</i><br>
+            We are currently looking for country managers for Spain and Italy.<br> Requirements:
+        </p><br>
 
-        <a href="https://www.leibniz-krisen.de/en.html"><img class= "logo" src="images/LFV_logo.png"></a>
+        <ol class="circle">
+            <li class="numbered">Leadership skills</li>
+            <li class="numbered">Can devote at least 8 hours per week to the work</li>
+            <li class="numbered">Language proficiency is preferable (Spanish for the position of country manager for Spain and Italian for the position of country manager for Italy)</li>
+        </ol><br>
 
-        <a href="https://www.overton.io/"><img class= "logo" src="images/overton_logo.png"></a>
-        <br>
-        ©2020
-        <br>
-        <a href="https://twitter.com/CoronaNet_org"><img src="images/twitter.png" width = "25px"></a>
-    </footer>
-</html>
+        <p class="block">
+            <i>Data Analyst</i><br>
+            The project is currently in need of people who are interested specifically in data validation, cleaning, and visualisation.
+        </p><br>
+
+        <p class="block">
+            <i>Research Assistant (any country or region)</i><br>
+            We are hoping to expand our data collection to more categories and government levels (i.e. subnational), in addition to our ongoing efforts to continuously keep our data up to date.
+        </p><br>
+        <ol class="circle">
+            <li class="numbered">Expand data collection to further categories and at sub-national levels</li>
+            <li class="numbered">Keep our data up to date as countries relax and impose new restrictions</li>
+            <li class="numbered">Attend general and subregional weekly meetings</li>
+            <br><br>
+        </ol>
+
+
+
+        <h3>Make your application!</h3><br>
+        <p class="block">
+            This position is an unpaid, volunteer position. However, the position can be done remotely, and the hours are flexible. We ask the applicant to consider a commitment of five to ten hour per week commitment for three months, though we will consider situations in which applicants cannot do the full three months (please explain in the application). We will attempt to assign you to a country you are interested in or have language/expertise in, but we cannot guarantee it.<br><br>
+
+            <i>Applications will be processed on a rolling basis.</i><br><br>
+
+            To apply, please use our <a class="link" href="https://form.jotform.com/201172569499062">online form.</a> Any questions about the position can be directed to <a class="link" href="admin@coronanet-project.org"> admin@coronanet-project.org.</a>
+        </p>
+
+
+    </div>
+</body>
+
+<footer>
+    <h1>Partner Universites and Institutions</h1>
+    <br>
+    <img class="logo" src="images/TUM.png">
+
+    <img class="logo" src="images/NYU.png">
+
+    <img class="logo" src="images/SOM.png">
+    <br>
+    <br>
+    <a href="https://www.jataware.com/"><img class="logo" src="images/jataware_logo.png"></a>
+
+    <a href="https://www.leibniz-krisen.de/en.html"><img class="logo" src="images/LFV_logo.png"></a>
+
+    <a href="https://www.overton.io/"><img class="logo" src="images/overton_logo.png"></a>
+    <br>
+    ©2020
+    <br>
+    <a href="https://twitter.com/CoronaNet_org"><img src="images/twitter.png" width="25px"></a>
+</footer></html>
