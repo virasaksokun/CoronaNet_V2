@@ -440,9 +440,10 @@ li.dropdown {
 
 #downloadButton {
   margin: auto;
-  position: absolute;
+  position: relative;
   bottom: 5%;
   left: 32.2%;
+  font-size:10vw;
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
   -webkit-appearance: button;
@@ -452,7 +453,7 @@ li.dropdown {
 
 #exploreButton {
   margin: auto;
-  position: absolute;
+  position: relative;
   bottom: 5%;
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
