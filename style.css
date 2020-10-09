@@ -540,7 +540,7 @@ footer {
 
 .ag-row .ag-cell {
   display: flex;
-  align-items: left;
+  align-items: left !important;
 }
 
 .ag-theme-alpine .ag-cell {

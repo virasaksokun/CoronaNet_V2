@@ -100,7 +100,7 @@
               var rows = data;
               var columns = [
                 {headerName: "Name", field: "Name", sortable: true, filter: true, resizable: true},
-                {headerName: "Vita", field: "Vita", sortable: true, filter: true, wrapText: true, autoHeight: true, resizable: true},
+                {headerName: "Vita", field: "Vita", sortable: true, filter: true, resizable: true, autoHeight: true, wrapText: true, width: 600, cellStyle: { 'text-align': 'left' }},
                 {headerName: "Country", field: "Country", sortable: true, filter: true, resizable: true  },
                 {headerName: "Start Date", field: "Start Date", sortable: true, filter: 'agDateColumnFilter', resizable: true  }
             ];
@@ -108,7 +108,11 @@
                 columnDefs: columns,
                 rowData: rows,
                 pagination: true,
-                paginationPageSize: 20
+                paginationPageSize: 20,
+                onGridReady: function() {
+                    gridOptions.api.autoSizeAllColumns();
+                    gridOptions.api.resetRowHeights();
+                }
             };
             var eGridDiv = document.querySelector('#raTable');
             new agGrid.Grid(eGridDiv, gridOptions);
