@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <head>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="icon" type="image/png" href="images/favicon.png">
+      <title>In the Media</title>
+      <script src="https://kit.fontawesome.com/36fb8500a9.js" crossorigin="anonymous"></script>
+		<div id="particles-js">
+			<div class="containerMenu">
+				<div>
+					<a href='download.html' id='downloadButton' class='button'><i class="fas fa-file-download"></i> Download data</a>
+					<a href='https://kubinec.shinyapps.io/coronanet/' id='exploreButton' class='button'><i class="fas fa-table"></i> Explore data</a>
+				</div>
+			</div>
+		</div>
+		<script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+		<script src="app.js"></script>
+        <style type="text/css">
+          @font-face {
+            font-family: "Computer Modern";
+            src: url('http://mirrors.ctan.org/fonts/cm-unicode/fonts/otf/cmunss.otf');
+          }
+          @font-face {
+            font-family: "Computer Modern";
+            src: url('http://mirrors.ctan.org/fonts/cm-unicode/fonts/otf/cmunsx.otf');
+            font-weight: bold;
+          }
+          @font-face {
+            font-family: "Computer Modern";
+            src: url('http://mirrors.ctan.org/fonts/cm-unicode/fonts/otf/cmunsi.otf');
+            font-style: italic, oblique;
+          }
+          @font-face {
+            font-family: "Computer Modern";
+            src: url('http://mirrors.ctan.org/fonts/cm-unicode/fonts/otf/cmunbxo.otf');
+            font-weight: bold;
+            font-style: italic, oblique;
+          }
+
+          body {
+            font-family: "Computer Modern", sans-serif;
+          }
+        </style>
+    </head>
+    
+    <body>
+        <div id="navbar">
+          <li><a href="index.html">Home</a></li>
+          <li class= "dropdown"><a>Methodology</a>
+            <div class="dropdown-content">
+              <a href="methods.html"><p class= "black">Data Collection Methods</p></a>
+                <a href="codebook.html"><p class= "black">Codebook</p></a>
+                <a href="validationcheck.html"><p class= "black">Validations and Reliability Checks</p></a>
+            </div>
+          </li>
+          <li><a href="visualisations.html">Visualisations</a>
+          </li>
+          <li><a href="reports.html">Reports</a>
+          </li>
+          <li><a href="publications.html">Publications</a>
+          </li>
+          <li><a href="inthemedia.html">In the Media</a></li>
+          <li><a href="about.html">About CoronaNet</a></li>
+          <li><a href="team.html">Our People</a></li>
+          <li><a href="join.html">Join CoronaNet</a></li>
+        </div>
+        
+        <script>
+        window.onscroll = function() {myFunction()};
+
+        var navbar = document.getElementById("navbar");
+        var sticky = navbar.offsetTop;
+
+        function myFunction() {
+          if (window.pageYOffset >= sticky) {
+            navbar.classList.add("sticky")
+          } else {
+            navbar.classList.remove("sticky");
+          }
+        }
+        </script>
+        
+        <div class="container">
+            <h1> Download CoronaNet Dataset </h1><br>
+            <br>
+            
+            <p class="block">
+            Please note that while we make every effort to clean this data, the speed and scale with which it was collected means that we cannot validate all of it. If you find an error in the data, please file an issue on this <a href="https://github.com/saudiwin/corona_tscs/issues"><b>Github page</b></a>.
+            </p><br>
+            
+            <p class="block">
+                1. CoronaNet Database Version 1.0 (core)<br><br>
+                This file contains variables from the CoronaNet government response project, representing national and sub-national policy event data from more than 190 countries since January 1st, 2020. The data include source links, descriptions, targets (i.e. other countries), the type and level of enforcement, and a comprehensive set of policy types. For more detail on this data, you can see our codebook <a href="assets/CoronaNet_Codebook.pdf"><b>here</b></a>.</p><br>
+                
+                <form>
+                <button formaction= "https://github.com/saudiwin/corona_tscs/raw/master/data/CoronaNet/data_bulk/coronanet_release.csv.gz" class="button button1">Download Core Dataset</button>
+                </form>
+                <br>
+            
+            <p class="block">
+                2. CoronaNet Database Version 1.0 (extended)<br><br>
+                This file contains the government response information from the core data along with the following datasets:</p><br>
+                
+                <ol class="circle">
+                <li class="numbered">Tests from the CoronaNet testing database (see http://coronanet-project.org for more info);</li>
+                <li class="numbered">Cases/deaths/recovered from the JHU data repository (https://github.com/CSSEGISandData/COVID-19);</li>
+                <li class="numbered">Country-level covariates including GDP, V-DEM democracy scores, human rights indices, power-sharing indices, and press freedom indices from the Niehaus World Economics and Politics Dataverse (https://niehaus.princeton.edu/news/world-economics-and-politics-dataverse)</li>
+                </ol><br>
+            
+                <form>
+                <button formaction= "https://github.com/saudiwin/corona_tscs/raw/master/data/CoronaNet/data_bulk/coronanet_release_allvars.csv.gz" class="button button1">Download Extended Dataset</button>
+                </form><br>
+            <p class="block">
+                3. CoronaNet Database Version 1.0 (core by country)<br><br>
+                This folder contains the data presented in the core dataset split by country.<br><br>
+                <form>
+                <button formaction= "https://github.com/saudiwin/corona_tscs/tree/master/data/CoronaNet/data_country/coronanet_release" class="button button1">Download Core Dataset by Country</button>
+                </form><br>
+            </p>
+
+            <br>
+            
+            <h3>CoronaNet Learning Platform</h3><br>
+            <p class="block">
+            We are an open data science initiative. This means that we want to invite everyone to work with our data. For people who are not familiar with statistical programs, we have designed a Learning Platform that shows you how to work with our data via RStudio.<br><br>
+            Please follow this link to enter the <a href="https://lumesserschmidt.github.io/stats_CoronaNet/index.html"><b>CoronaNet Learning Platform</b></a>.
+            </p><br>
+            
+            <h3>License</h3><br>
+            <p class="block">
+                CC-By Attribution 4.0 International<br><br>
+
+                Please cite the project and dataset as:<br><br>
+
+                Cheng, Cindy, Joan Barceló, Allison Hartnett, Robert Kubinec, and Luca Messerschmidt. 2020. COVID-19 Government Response Event Dataset (CoronaNet v1.0). https://www.coronanet-project.org
+            </p>
+                  
+        </div>
+    </body>
+    
+    <footer>
+        <h1>Partner Universites and Institutions</h1>
+        <br>
+        <img class= "logo" src="images/TUM.png">
+
+        <img class= "logo" src="images/NYU.png">
+
+        <img class= "logo" src="images/SOM.png">
+        <br>
+        <br>
+        <a href="https://www.jataware.com/"><img class= "logo" src="images/jataware_logo.png"></a>
+
+        <a href="https://www.leibniz-krisen.de/en.html"><img class= "logo" src="images/LFV_logo.png"></a>
+
+        <a href="https://www.overton.io/"><img class= "logo" src="images/overton_logo.png"></a>
+        <br>
+        ©2020
+        <br>
+        <a href="https://twitter.com/CoronaNet_org"><img src="images/twitter.png" width = "25px"></a>
+    </footer>
+</html>
