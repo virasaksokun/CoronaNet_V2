@@ -146,6 +146,7 @@ body{
 h1 {
     font-size: 40px;  
     text-align: center;
+    font-size:3vw;
 }
 
 h2 {
@@ -188,6 +189,7 @@ a {
     background-color: inherit;
     color: black;
     font-weight: normal;
+    font-size:2vw;
 }
 
 a.white { 
@@ -440,10 +442,9 @@ li.dropdown {
 
 #downloadButton {
   margin: auto;
-  position: relative;
+  position: absolute;
   bottom: 5%;
   left: 32.2%;
-  font-size:10vw;
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
   -webkit-appearance: button;
@@ -453,7 +454,7 @@ li.dropdown {
 
 #exploreButton {
   margin: auto;
-  position: relative;
+  position: absolute;
   bottom: 5%;
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
@@ -531,9 +532,9 @@ footer {
   text-align: center;
   font-family: "Computer Modern", sans-serif;
   padding: 15px;
+  font-size:2vw;
   background-color: white;
   color: black;
-  padding: 2%;
   position: static;
   bottom: 0; 
 }
