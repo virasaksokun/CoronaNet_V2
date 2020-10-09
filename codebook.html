@@ -9,7 +9,7 @@
 		<div id="particles-js">
 			<div class="containerMenu">
 				<div>
-					<a href='https://www.coronanet-project.org/' id='downloadButton' class='button'><i class="fas fa-file-download"></i> Download data</a>
+					<a href='https://www.coronanet-project.org/' id='downloadButton' class='button' style="padding-left: 65px;"><i class="fas fa-file-download"></i> Download data</a>
 					<a href='https://kubinec.shinyapps.io/coronanet/' id='exploreButton' class='button'><i class="fas fa-table"></i> Explore data</a>
 				</div>
 			</div>
@@ -115,7 +115,7 @@
             
         <button class="accordion">Policy end date</button>
         <div class="panel"><br>
-          [date_end]: Document the date in which a policy ends if applicable. If no end date was announced, then this field is left blank.<br><br>
+          [date_end]: Documents the date in which a policy ends if applicable. If no end date was announced, then this field is left blank.<br><br>
         </div>
             
         <button class="accordion">Country</button>
@@ -151,14 +151,17 @@
           [enforcer]: Documents what government body is tasked with enforcing a particular policy, e.g. police, national level government, etc. <br><br>
         </div>
             
-        <button class="accordion">There is a unique [record_id] for each policy sub-type, start date, government level initiating a policy combination. Policies are tracked over time with a unique [policy_id]. Click here for more information on how we document policies over time.</button>
-        <div class="panel"><br>
-          Documentation as to whether a policy a new entry or an update is documented in the [entry_type] variable. <br>
-          If the policy is an update, whether it documents the end of a policy or a change of a policy (e.g. a time extension of a policy) is documented in the [update_type] policy. <br>
-          If a policy documents a change of a policy, whether a policy is strengthening (e.g. the policy ends later than previously announced) or weakening (e.g. the policy ends earlier than previously announced) is noted in the [update_level] variable. 
-          <br><br>
-        </div><br><br>
-          
+        <br><br>
+        
+        <p class="block">
+                There is a unique [record_id] for each policy sub-type, start date, government level initiating a policy combination. Policies are tracked over time with a unique [policy_id]:
+            </p><br>
+            
+            <ol class="circle">
+                <li class="numbered">Documentation as to whether a policy a new entry or an update is documented in the [entry_type] variable.</li>
+                <li class="numbered">If the policy is an update, whether it documents the end of a policy or a change of a policy (e.g. a time extension of a policy) is documented in the [update_type] policy. </li>
+                <li class="numbered">If a policy documents a change of a policy, whether a policy is strengthening (e.g. the policy ends later than previously announced) or weakening (e.g. the policy ends earlier than previously announced) is noted in the [update_level] variable.</li>
+            </ol><br>    
         
         <h3 >Meta Data</h3><br>
         <p class="block" style="font-size:18px;">Each unique policy also includes meta data which documents the:</p><br><br>    
