@@ -32,6 +32,7 @@ body{
     margin-left: 150px;
     margin-right: 150px;
     text-align: center;
+    font-style:normal;
 }
 
 .slideshow {
@@ -441,7 +442,7 @@ li.dropdown {
   margin: auto;
   position: absolute;
   bottom: 5%;
-  left: 30%;
+  left: 32%;
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
   -webkit-appearance: button;
