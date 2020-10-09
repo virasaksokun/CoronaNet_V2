@@ -5,6 +5,17 @@
     -moz-osx-font-smoothing: grayscale;
 }
 
+/* For mobile phones: */
+@media only screen and (min-width: 480px) {
+  .p {width: 8.33%;}
+  
+}
+
+@media only screen and (min-width: 600px) {
+  /* For tablets: */
+  
+}
+
 #navbar{
   background-color: black;
   color: black;
@@ -15,6 +26,10 @@
 
 .navbar li{
   background-color:black;
+}
+
+.navbar li a{
+  font-size: 3vw;
 }
 
 .sticky {
@@ -144,7 +159,7 @@ body{
 }
 
 h1 {
-    font-size: 40px;  
+    font-size: 3vw;
     text-align: center;
 }
 
@@ -188,7 +203,7 @@ a {
     background-color: inherit;
     color: black;
     font-weight: normal;
-    font-size:2vw;
+    font-size: inherit;
 }
 
 a.white { 
