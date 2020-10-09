@@ -1,260 +1,265 @@
 <!DOCTYPE html>
 <html>
     <link rel="stylesheet" type="text/css" href="style.css">
-    <head>
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <link rel="icon" type="image/png" href="images/favicon.png">
-      <title>Codebook</title>
-      <script src="https://kit.fontawesome.com/36fb8500a9.js" crossorigin="anonymous"></script>
-		<div id="particles-js">
-			<div class="containerMenu">
-				<div>
-<<<<<<< HEAD
-					<a href='https://www.coronanet-project.org/' id='downloadButton' class='button'><i class="fas fa-file-download"></i> Download data</a>
-=======
-					<a href='download.html' id='downloadButton' class='button' style="padding-left: 65px;"><i class="fas fa-file-download"></i> Download data</a>
->>>>>>> bbacc2f1cd574f469ebbe505a4afe511137be8bd
-					<a href='https://kubinec.shinyapps.io/coronanet/' id='exploreButton' class='button'><i class="fas fa-table"></i> Explore data</a>
-				</div>
-			</div>
-		</div>
-		<script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
-		<script src="app.js"></script>
-        <script src='jquery-3.2.1.min.js'></script>
-        <style type="text/css">
-          @font-face {
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <title>Codebook</title>
+    <script src="https://kit.fontawesome.com/36fb8500a9.js" crossorigin="anonymous"></script>
+    <div id="particles-js">
+        <div class="containerMenu">
+            <a href='download.html' id='downloadButton' class='button'><i class="fas fa-file-download"></i> Download data</a>
+            <a href='https://kubinecgit.shinyapps.io/coronanet/' id='exploreButton' class='button'><i class="fas fa-table"></i> Explore data</a>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script src="app.js"></script>
+    <script src='jquery-3.2.1.min.js'></script>
+    <style type="text/css">
+        @font-face {
             font-family: "Computer Modern";
             src: url('http://mirrors.ctan.org/fonts/cm-unicode/fonts/otf/cmunss.otf');
-          }
-          @font-face {
+        }
+
+        @font-face {
             font-family: "Computer Modern";
             src: url('http://mirrors.ctan.org/fonts/cm-unicode/fonts/otf/cmunsx.otf');
             font-weight: bold;
-          }
-          @font-face {
+        }
+
+        @font-face {
             font-family: "Computer Modern";
             src: url('http://mirrors.ctan.org/fonts/cm-unicode/fonts/otf/cmunsi.otf');
             font-style: italic, oblique;
-          }
-          @font-face {
+        }
+
+        @font-face {
             font-family: "Computer Modern";
             src: url('http://mirrors.ctan.org/fonts/cm-unicode/fonts/otf/cmunbxo.otf');
             font-weight: bold;
             font-style: italic, oblique;
-          }
+        }
 
-          body {
+        body {
             font-family: "Computer Modern", sans-serif;
-            font-style:normal;
-          }
-        </style>
-    </head>
-    
-    <body>
-        <div id="navbar">
-          <li><a href="index.html">Home</a></li>
-          <li class= "dropdown"><a>Methodology</a>
+            font-style: normal;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="navbar">
+        <li><a href="index.html">Home</a></li>
+        <li class="dropdown"><a>Methodology</a>
             <div class="dropdown-content">
-              <a href="methods.html"><p class= "black">Data Collection Methods</p></a>
-                <a href="codebook.html"><p class= "black">Codebook</p></a>
-                <a href="validationcheck.html"><p class= "black">Validations and Reliability Checks</p></a>
+                <a href="methods.html">
+                    <p class="black">Data Collection Methods</p>
+                </a>
+                <a href="codebook.html">
+                    <p class="black">Codebook</p>
+                </a>
+                <a href="validationcheck.html">
+                    <p class="black">Validations and Reliability Checks</p>
+                </a>
             </div>
-          </li>
-          <li><a href="visualisations.html">Visualisations</a>
-          </li>
-          <li><a href="reports.html">Reports</a>
-          </li>
-          <li><a href="publications.html">Publications</a>
-          </li>
-          <li><a href="inthemedia.html">In the Media</a></li>
-          <li><a href="about.html">About CoronaNet</a></li>
-          <li><a href="team.html">Our People</a></li>
-          <li><a href="join.html">Join CoronaNet</a></li>
-        </div>
-        
-        <script>
-        window.onscroll = function() {myFunction()};
+        </li>
+        <li><a href="visualisations.html">Visualisations</a>
+        </li>
+        <li><a href="reports.html">Reports</a>
+        </li>
+        <li><a href="publications.html">Publications</a>
+        </li>
+        <li><a href="inthemedia.html">In the Media</a></li>
+        <li><a href="about.html">About CoronaNet</a></li>
+        <li><a href="team.html">Our People</a></li>
+        <li><a href="join.html">Join CoronaNet</a></li>
+    </div>
+
+    <script>
+        window.onscroll = function() {
+            myFunction()
+        };
 
         var navbar = document.getElementById("navbar");
         var sticky = navbar.offsetTop;
 
         function myFunction() {
-          if (window.pageYOffset >= sticky) {
-            navbar.classList.add("sticky")
-          } else {
-            navbar.classList.remove("sticky");
-          }
+            if (window.pageYOffset >= sticky) {
+                navbar.classList.add("sticky")
+            } else {
+                navbar.classList.remove("sticky");
+            }
         }
-        </script>
-        
-        <div class="container">
-            <h1>Codebook</h1><br>
-            
-            <p class="block">
-                The CoronaNet dataset collects data on government policies made in response to the COVID-19 pandemic for 190+ countries around the world. Data collection began on March 28, 2020 and tracks relevant government policies made since December 31, 2019. In the below, we provide a brief overview of the data available from the CoronaNet database. You can download the complete codebook <a class="link" href="https://www.coronanet-project.org/data/codebook/CoronaNet_Codebook.pdf" >here.</a> <br><br>
-                
-                Each policy entry documents the following information:<br><br>
-            </p>
-        
-        
+    </script>
+
+    <div class="container">
+        <h1>Codebook</h1><br>
+
+        <p class="block">
+            The CoronaNet dataset collects data on government policies made in response to the COVID-19 pandemic for 190+ countries around the world. Data collection began on March 28, 2020 and tracks relevant government policies made since December 31, 2019. In the below, we provide a brief overview of the data available from the CoronaNet database. You can download the complete codebook <a class="link" href="https://www.coronanet-project.org/data/codebook/CoronaNet_Codebook.pdf">here.</a> <br><br>
+
+            Each policy entry documents the following information:<br><br>
+        </p>
+
+
         <button class="accordion">Policy textual description</button>
         <div class="panel"><br>
-          [description]: Provides raw text which describes at a minimum, what government initiated a policy, what the policy type is and when the policy type was applied for. Where applicable, it also includes information about the geographical and demographic targets of a policy.<br>
-          <br>
+            [description]: Provides raw text which describes at a minimum, what government initiated a policy, what the policy type is and when the policy type was applied for. Where applicable, it also includes information about the geographical and demographic targets of a policy.<br>
+            <br>
         </div>
-        
+
         <button class="accordion">Policy type</button>
         <div class="panel"><br>
-          [type]: Categorizes policies into x broad types and y sub-types. Please see chart below for more information.<br><br>
+            [type]: Categorizes policies into x broad types and y sub-types. Please see chart below for more information.<br><br>
         </div>
-            
+
         <button class="accordion">Policy announcement date</button>
         <div class="panel"><br>
-          [date_announced]: Documents the date in which a policy was announced<br><br>
+            [date_announced]: Documents the date in which a policy was announced<br><br>
         </div>
-        
+
         <button class="accordion">Policy start date</button>
         <div class="panel"><br>
-          [date_start]: Documents the date in which a policy starts<br><br>
+            [date_start]: Documents the date in which a policy starts<br><br>
         </div>
-            
+
         <button class="accordion">Policy end date</button>
         <div class="panel"><br>
-          [date_end]: Documents the date in which a policy ends if applicable. If no end date was announced, then this field is left blank.<br><br>
+            [date_end]: Documents the date in which a policy ends if applicable. If no end date was announced, then this field is left blank.<br><br>
         </div>
-            
+
         <button class="accordion">Country</button>
         <div class="panel"><br>
-          [country]: Documents the country from which a policy originates from<br><br>
+            [country]: Documents the country from which a policy originates from<br><br>
         </div>
-            
+
         <button class="accordion">Government level initiating the policy</button>
         <div class="panel"><br>
-          [init_country_level]: Documents what level of government a policy was initiated from. If the policy was initiated a province or municipality, the name of the sub-national government is noted in the [province] and [city] variables respectively<br><br>
+            [init_country_level]: Documents what level of government a policy was initiated from. If the policy was initiated a province or municipality, the name of the sub-national government is noted in the [province] and [city] variables respectively<br><br>
         </div>
-            
+
         <button class="accordion">Geographical target of the policy</button>
         <div class="panel"><br>
-          [target_geog_level]: Documents what geographical jurisdiction a policy was targeted toward. <br>
-          The country of the geographical jurisdiction is noted in the [target_country] variable. <br>
-          If applicable, the target province, city or other sub-national target are documented in [target_province], [target_city] and [target_other]. 
-          <br><br>
+            [target_geog_level]: Documents what geographical jurisdiction a policy was targeted toward. <br>
+            The country of the geographical jurisdiction is noted in the [target_country] variable. <br>
+            If applicable, the target province, city or other sub-national target are documented in [target_province], [target_city] and [target_other].
+            <br><br>
         </div>
-            
+
         <button class="accordion">Demographic target of the policy</button>
         <div class="panel"><br>
-          [target_who_what]: Documents whether a policy targets a particular demographic based on their citizenship, residency, or relevance to the health sector<br><br>
+            [target_who_what]: Documents whether a policy targets a particular demographic based on their citizenship, residency, or relevance to the health sector<br><br>
         </div>
-            
+
         <button class="accordion">Compliance level</button>
         <div class="panel"><br>
-          [compliance]: Documents whether the de jure compliance for a policy is voluntary or mandatory and if mandatory, what the compliance mechanism is<br><br>
+            [compliance]: Documents whether the de jure compliance for a policy is voluntary or mandatory and if mandatory, what the compliance mechanism is<br><br>
         </div>
-        
+
         <button class="accordion">Enforcer of the policy</button>
         <div class="panel"><br>
-          [enforcer]: Documents what government body is tasked with enforcing a particular policy, e.g. police, national level government, etc. <br><br>
+            [enforcer]: Documents what government body is tasked with enforcing a particular policy, e.g. police, national level government, etc. <br><br>
         </div>
-            
+
         <br><br>
-        
+
         <p class="block">
-                There is a unique [record_id] for each policy sub-type, start date, government level initiating a policy combination. Policies are tracked over time with a unique [policy_id]:
-            </p><br>
-            
-            <ol class="circle">
-                <li class="numbered">Documentation as to whether a policy a new entry or an update is documented in the [entry_type] variable.</li>
-                <li class="numbered">If the policy is an update, whether it documents the end of a policy or a change of a policy (e.g. a time extension of a policy) is documented in the [update_type] policy. </li>
-                <li class="numbered">If a policy documents a change of a policy, whether a policy is strengthening (e.g. the policy ends later than previously announced) or weakening (e.g. the policy ends earlier than previously announced) is noted in the [update_level] variable.</li>
-            </ol><br>    
-        
-        <h3 >Meta Data</h3><br>
-        <p class="block" style="font-size:18px;">Each unique policy also includes meta data which documents the:</p><br><br>    
-        
+            There is a unique [record_id] for each policy sub-type, start date, government level initiating a policy combination. Policies are tracked over time with a unique [policy_id]:
+        </p><br>
+
+        <ol class="circle">
+            <li class="numbered">Documentation as to whether a policy a new entry or an update is documented in the [entry_type] variable.</li>
+            <li class="numbered">If the policy is an update, whether it documents the end of a policy or a change of a policy (e.g. a time extension of a policy) is documented in the [update_type] policy. </li>
+            <li class="numbered">If a policy documents a change of a policy, whether a policy is strengthening (e.g. the policy ends later than previously announced) or weakening (e.g. the policy ends earlier than previously announced) is noted in the [update_level] variable.</li>
+        </ol><br>
+
+        <h3>Meta Data</h3><br>
+        <p class="block" style="font-size:18px;">Each unique policy also includes meta data which documents the:</p><br><br>
+
         <button class="accordion">Date of entry collection</button>
         <div class="panel"><br>
-          [recorded_date]: Documents the date and time in which a policy was recorded in the CoronaNet database
-          <br><br>
+            [recorded_date]: Documents the date and time in which a policy was recorded in the CoronaNet database
+            <br><br>
         </div>
-        
+
         <button class="accordion">URL link of the primary source</button>
         <div class="panel"><br>
-          [link]: Records the URL link of the primary source from which a policy was documented
-          <br><br>
+            [link]: Records the URL link of the primary source from which a policy was documented
+            <br><br>
         </div>
-            
+
         <button class="accordion">Date of policy last checked for updates</button>
         <div class="panel"><br>
-          [date_updated]: Documents the date at which a researcher last checked to see if a policy existed for a particular level of government and policy type. This data is useful to distinguish between whether a) a government did not institute a particular policy (e.g. school closures) or b) such a policy does empirically exist but our researchers have yet to document it in the CoronaNet database  
-          <br>
+            [date_updated]: Documents the date at which a researcher last checked to see if a policy existed for a particular level of government and policy type. This data is useful to distinguish between whether a) a government did not institute a particular policy (e.g. school closures) or b) such a policy does empirically exist but our researchers have yet to document it in the CoronaNet database
+            <br>
         </div><br>
-            
+
         <script>
-        var acc = document.getElementsByClassName("accordion");
-        var i;
-            
-        for (i = 0; i < acc.length; i++) {
-          acc[i].addEventListener("click", function() {
-            this.classList.toggle("active");
-            var panel = this.nextElementSibling;
-            if (panel.style.maxHeight) {
-              panel.style.maxHeight = null;
-            } else {
-              panel.style.maxHeight = panel.scrollHeight + "px";
-            } 
-          });
-        }
+            var acc = document.getElementsByClassName("accordion");
+            var i;
+
+            for (i = 0; i < acc.length; i++) {
+                acc[i].addEventListener("click", function() {
+                    this.classList.toggle("active");
+                    var panel = this.nextElementSibling;
+                    if (panel.style.maxHeight) {
+                        panel.style.maxHeight = null;
+                    } else {
+                        panel.style.maxHeight = panel.scrollHeight + "px";
+                    }
+                });
+            }
         </script>
-            
-            <h3>Terms and Conditions</h3><br>
-            <p class="block">
-                By using this site or downloading data from CoronaNet, users agree to the following:
-            </p><br>
-            
-            <ol class="circle">
-                <li class="numbered">To use and/or download the data only for private or personal, non-commercial purposes</li>
-                <li class="numbered">To cite the source of the data</li>
-                <li class="numbered">To accept disclaimers and restrictions of rights and liability converning the data</li>
-            </ol><br>
-            
-            <h3>Citing CoronaNet</h3><br>
-            
-            <p class="block">
+
+        <h3>Terms and Conditions</h3><br>
+        <p class="block">
+            By using this site or downloading data from CoronaNet, users agree to the following:
+        </p><br>
+
+        <ol class="circle">
+            <li class="numbered">To use and/or download the data only for private or personal, non-commercial purposes</li>
+            <li class="numbered">To cite the source of the data</li>
+            <li class="numbered">To accept disclaimers and restrictions of rights and liability converning the data</li>
+        </ol><br>
+
+        <h3>Citing CoronaNet</h3><br>
+
+        <p class="block">
             For non-academic purposes, please cite the information in CoronaNet as:<br><br>
 
             <b>Source:</b> CoronaNet Research Project<br><br>
-                
+
             For academic purposes, please cite the information in CoronaNet and/or user’s guide using the following citation:<br><br>
 
-                <b>APA:</b> Cheng, C., Barcelo, J., Hartnett, A.S., Kubinec, R., & Messerschmidt, L. (2020). CoronaNet—Tracking governments COVID-19 responses. <a class="link" href="https://www.coronanet-project.org">https://www.coronanet-project.org</a><br><br>
+            <b>APA:</b> Cheng, C., Barcelo, J., Hartnett, A.S., Kubinec, R., & Messerschmidt, L. (2020). CoronaNet—Tracking governments COVID-19 responses. <a class="link" href="https://www.coronanet-project.org">https://www.coronanet-project.org</a><br><br>
             <b>Chicago:</b> Cheng, Cindy, Joan Barcelo, Allison Spencer Hartnett, Robert Kubinec, and Luca Messerschmidt. 2020. “CoronaNet -Tracking Governments COVID-19 Responses.” <a class="link" href="https://www.coronanet-project.org">https://www.coronanet-project.org</a><br><br>
             The dataset in combination with the paper published in “Nature Human Behavior” can be cited the following way:<br><br>
 
             Cheng, Cindy, Joan Barceló, Allison Hartnett, Robert Kubinec, and Luca Messerschmidt. 2020. COVID-19 Government Response Event Dataset (CoronaNet v1.0). Nature Human Behaviour (2020). <a class="link" href="https://doi.org/10.1038/s41562-020-0909-7">https://doi.org/10.1038/s41562-020-0909-7</a>
-            </p><br><br>
-        </div>
-        
-        
-    </body>
-    
-    <footer>
-        <h1>Partner Universites and Institutions</h1>
-        <br>
-        <img class= "logo" src="images/TUM.png">
+        </p><br><br>
+    </div>
 
-        <img class= "logo" src="images/NYU.png">
 
-        <img class= "logo" src="images/SOM.png">
-        <br>
-        <br>
-        <a href="https://www.jataware.com/"><img class= "logo" src="images/jataware_logo.png"></a>
+</body>
 
-        <a href="https://www.leibniz-krisen.de/en.html"><img class= "logo" src="images/LFV_logo.png"></a>
+<footer>
+    <h1>Partner Universites and Institutions</h1>
+    <br>
+    <img class="logo" src="images/TUM.png">
 
-        <a href="https://www.overton.io/"><img class= "logo" src="images/overton_logo.png"></a>
-        <br>
-        ©2020
-        <br>
-        <a href="https://twitter.com/CoronaNet_org"><img src="images/twitter.png" width = "25px"></a>
-    </footer>
-</html>
+    <img class="logo" src="images/NYU.png">
+
+    <img class="logo" src="images/SOM.png">
+    <br>
+    <br>
+    <a href="https://www.jataware.com/"><img class="logo" src="images/jataware_logo.png"></a>
+
+    <a href="https://www.leibniz-krisen.de/en.html"><img class="logo" src="images/LFV_logo.png"></a>
+
+    <a href="https://www.overton.io/"><img class="logo" src="images/overton_logo.png"></a>
+    <br>
+    ©2020
+    <br>
+    <a href="https://twitter.com/CoronaNet_org"><img src="images/twitter.png" width="25px"></a>
+</footer></html>
