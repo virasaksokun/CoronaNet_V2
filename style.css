@@ -555,14 +555,3 @@ footer {
     position: static;
     bottom: 0;
 }
-
-/* Reduce line space in team cells */
-
-.ag-row .ag-cell {
-    display: flex;
-    align-items: left !important;
-}
-
-.ag-theme-alpine .ag-cell {
-    line-height: 20px !important;
-}
