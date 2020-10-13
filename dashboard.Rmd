@@ -222,6 +222,7 @@ CoronaNet Checklist
   + [India Data Checklist](https://docs.google.com/spreadsheets/d/1Wmwb4-I42BpihVmkM-AV5OM0wl1PIQ0Z-4bbDyVpOqg/edit?usp=sharing)
   + [Italy Data Checklist](https://docs.google.com/spreadsheets/d/1tSZXITSuRxpc-qM3fNmjgDfS-vj4bQoHcoZHaao8bC8/edit?usp=sharing)
   + [Japan Data Checklist](https://docs.google.com/spreadsheets/d/1z3bXp8H4SaDPv3AK_cMUAuNryin6GHr4jG94ERTCNkA/edit?usp=sharing)
+  + [Mexico Data Cheklist](https://docs.google.com/spreadsheets/d/1x8PFY9HAHqTXnEVw-3-oQU2tF-94JlvgX0whFmdU0d8/edit?usp=sharing)
   + [Nigeria Data Checklist](https://docs.google.com/spreadsheets/d/1eZGkciKp2dBRDxpfVAgF0dQNCEVIiMNNw-2IWtb0EIQ/edit?usp=sharing)
   + [Russia Data Checklist](https://docs.google.com/spreadsheets/d/1BJxOdIjGq9GaHgLV_qxbW4AgwZ3fu3-ID4j-gXPMrhA/edit?usp=sharing)
   + [Spain Data Checklist](https://docs.google.com/spreadsheets/d/1y271IKkpDG50WcbnZsrdMBXPDS75_x1dSdIUW68Ca6A/edit?usp=sharing)
