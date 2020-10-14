@@ -379,11 +379,16 @@ li.numbered {
 
 li.numbered a{
     padding:0px;
+    color: grey;
 }
 
 li.numbered a:hover {
     color: black;
     background-color: white;
+}
+
+li.numbered a:visited {
+    color: grey;
 }
 
 li a {
